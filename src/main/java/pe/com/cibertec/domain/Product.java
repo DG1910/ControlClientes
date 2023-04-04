@@ -4,10 +4,8 @@
  */
 package pe.com.cibertec.domain;
 
-import com.fasterxml.jackson.databind.util.LRUMap;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
 import lombok.Data;
 
 /**
@@ -16,10 +14,6 @@ import lombok.Data;
  */
 @Entity
 @Data
-@Table(name = "employee")
-public class Empleado {
-    @Id
-    public String nombres;
-    public String apellidos;
-    
+public class Product {
+   private long id;
 }
